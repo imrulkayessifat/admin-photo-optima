@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input"
 export const SubscriptionSchema = z.object({
   name: z.string(),
   bandwidth: z.number().min(25),
-  price: z.number().min(1).multipleOf(0.01)
+  price: z.number().min(0).multipleOf(0.01)
 })
 
 type FormValues = z.input<typeof SubscriptionSchema>
