@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { IoIosLogOut } from "react-icons/io";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import { LogoutButton } from "@/components/auth/logout-button";
@@ -15,6 +16,18 @@ const Navbar = () => {
                 <Link href={"/"}>
                     <Logo src="/photo-optima.svg" />
                 </Link>
+                <div className="gap-3">
+                    <Link href={"/dashboard"}>
+                        <Button variant={"outline"}>
+                            Subscription Plan
+                        </Button>
+                    </Link>
+                    <Link href={"/user-subscription"}>
+                        <Button variant={"outline"}>
+                            User Subscription
+                        </Button>
+                    </Link>
+                </div>
                 <div className="flex justify-between gap-2">
                     {/* {
                         user && (
