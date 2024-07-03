@@ -58,7 +58,7 @@ const Page = () => {
     }
 
     return (
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full mt-24">
             <Card className="w-2/5 md:w-1/4 h-2/5">
                 <CardContent>
                     <Form {...form}>
