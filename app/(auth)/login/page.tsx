@@ -41,13 +41,14 @@ const Page = () => {
 
     const onSubmit = (data: z.infer<typeof LoginSchema>) => {
         startTransition(() => {
-            const promise = login (data,callbackUrl)
+            const promise = login(data, callbackUrl)
 
-            toast.promise(promise,{
-                loading:'Login into Account...',
-                success:(data)=> {
+            toast.promise(promise, {
+                loading: 'Login into Account...',
+                success: (data) => {
+                    console.log("login data : ", data)
                     form.reset()
-                    if(data?.error) {
+                    if (data?.error) {
                         return `Login failed: ${data?.error}`
                     } else {
                         return `Login successful: ${data?.success}`
