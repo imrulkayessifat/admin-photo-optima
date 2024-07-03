@@ -26,7 +26,7 @@ const Navbar = () => {
                         </Button>
                     </Link>
                     <Link href={"/user-subscription"}>
-                        <Button variant={"outline"}>
+                        <Button className={`${pathName === '/user-subscription' ? 'border-sky-500' : ''}`} variant={"outline"}>
                             User Subscription
                         </Button>
                     </Link>

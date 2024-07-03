@@ -1,5 +1,5 @@
 import { currentUser } from "@/lib/auth"
-import SubscriptionList from "@/components/subscription/subscription-list";
+import UserSubscriptionList from "@/components/user-subscription/user-subscription-list";
 
 
 const Page = async () => {
@@ -15,7 +15,7 @@ const Page = async () => {
   return (
     <div className="mt-24">
       <div className="flex flex-col mx-auto px-8">
-        <SubscriptionList token={user.accessToken} />
+        <UserSubscriptionList  token={user.accessToken}/>
       </div>
     </div>
   )
