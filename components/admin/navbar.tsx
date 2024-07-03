@@ -11,7 +11,7 @@ import Logo from "@/components/logo";
 const Navbar = () => {
     const user = useCurrentUser();
 
-    console.log("pathname : ",usePathname())
+    const pathName = usePathname()
 
     return (
         <header className={`fixed z-40 top-0 bg-white dark:bg-[#0f0f0f] shadow-sm py-5 w-screen`}>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 </Link>
                 <div className="flex gap-3">
                     <Link href={"/dashboard"}>
-                        <Button variant={"outline"}>
+                        <Button className={`${pathName === '/dashboard' ? 'border-sky-500' : ''}`} variant={"outline"}>
                             Subscription Plan
                         </Button>
                     </Link>
