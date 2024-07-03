@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <header className={`fixed z-40 top-0 bg-white dark:bg-[#0f0f0f] shadow-sm py-5 w-screen`}>
-            <div className='mx-auto px-10 flex justify-between items-center'>
+            <div className='mx-auto px-24 flex justify-between items-center'>
                 <Link href={"/"}>
                     <Logo src="/photo-optima.svg" />
                 </Link>

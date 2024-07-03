@@ -14,7 +14,7 @@ const Page = async () => {
 
   return (
     <div className="mt-24">
-      <div className="flex flex-col mx-auto px-8">
+      <div className="flex flex-col mx-auto px-24">
         <UserSubscriptionList  token={user.accessToken}/>
       </div>
     </div>
